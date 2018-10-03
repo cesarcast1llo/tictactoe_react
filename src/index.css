@@ -2,14 +2,46 @@ body {
     font: 40px "Century Gothic", Futura, sans-serif;
     color: rgb(30, 205, 151);
     text-align: center;
-    padding-top: 2%;
     background-color: rgb(226, 222, 222);
+    margin: 0;
   }
   
+  .center {
+    text-align: center;
+  }
+
   .status {
     margin: 10px;
   }
-  
+
+  @media screen and (max-width: 390px) {
+  .board-row {
+    float: left;
+    padding-left: 40px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .board-row {
+      float: left;
+      padding-left: 40px;
+    }
+  }
+
+  @media screen and (max-width: 288px) {
+    .board-row {
+      float: left;
+      padding-left: 40px;
+    }
+  }
+
+  @media screen and (max-width: 246px) {
+    .board-row {
+      float: left;
+      padding-left: 0px;
+    }
+  }
+    
   .square {
     background: #fff;
     border: 10px inherit;
@@ -20,6 +52,34 @@ body {
     line-height: 14px;
     height: 130px;
     width: 130px;
+  }
+
+  @media screen and (max-width: 390px) {
+    .square {
+      background: #fff;
+      border: 5px inherit;
+      float: left;
+      font-size: 50px;
+      color: rgb(30,205,151);
+      font-weight: bold;
+      line-height: 7px;
+      height: 100px;
+      width: 100px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .square {
+      background: #fff;
+      border: 2px inherit;
+      float: left;
+      font-size: 40px;
+      color: rgb(30,205,151);
+      font-weight: bold;
+      line-height: 2px;
+      height: 75px;
+      width: 75px;
+    }
   }
   
   .square:focus {
