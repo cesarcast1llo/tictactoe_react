@@ -162,8 +162,5 @@
   .button:hover {
     color: rgba(255,255,255,1);
     background: rgb(30, 205, 151);
-    -webkit-transform: scale(1.18);
-    -ms-transform: scale(1.18);
-    transform: scale(1.18);
   }
   
