@@ -73,7 +73,7 @@ class Board extends Component {
             {this.renderSquare(7)}
             {this.renderSquare(8)}
           </div>
-          <button class="button" value="reset" onClick={this.restartGame.bind(this)} >Restart Game</button>
+          <button className="button" value="reset" onClick={this.restartGame.bind(this)} >Restart Game</button>
         </div>
           );
         }
