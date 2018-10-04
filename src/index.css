@@ -28,6 +28,7 @@
   
   .square {
     background: #fff;
+    border: 10px inherit;
     float: left;
     font-size: 100px;
     color: rgb(30,205,151);
@@ -40,7 +41,7 @@
   @media screen and (max-width: 390px) {
     .square {
       background: #fff;
-
+      border: 5px inherit;
       float: left;
       font-size: 90px;
       color: rgb(30,205,151);
@@ -54,6 +55,7 @@
   @media screen and (max-width: 350px) {
     .square {
       background: #fff;
+      border: 2px inherit;
       float: left;
       font-size: 90px;
       color: rgb(30,205,151);
@@ -67,6 +69,7 @@
   @media screen and (max-width: 300px) {
     .square {
       background: #fff;
+      border: 2px inherit;
       float: left;
       font-size: 80px;
       color: rgb(30,205,151);
@@ -80,7 +83,7 @@
   @media screen and (max-width: 270px) {
     .square {
       background: #fff;
-
+      border: 2px inherit;
       float: left;
       font-size: 75px;
       color: rgb(30,205,151);
@@ -94,7 +97,7 @@
   @media screen and (max-width: 255px) {
     .square {
       background: #fff;
-
+      border: 2px inherit;
       float: left;
       font-size: 65px;
       color: rgb(30,205,151);
@@ -108,7 +111,7 @@
   @media screen and (max-width: 225px) {
     .square {
       background: #fff;
-
+      border: 2px inherit;
       float: left;
       font-size: 0px;
       color: rgb(30,205,151);
@@ -159,5 +162,6 @@
   .button:hover {
     color: rgba(255,255,255,1);
     background: rgb(30, 205, 151);
+
   }
   
