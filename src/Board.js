@@ -59,7 +59,9 @@ class Board extends Component {
         <div className="center">
           <div className="container">
             <div className="row">
-              <div className="status">{status}</div>
+              <div className="status">
+                {status
+              }</div>
             </div>
             <div className="row">
               <div className="col-12 board-row">
