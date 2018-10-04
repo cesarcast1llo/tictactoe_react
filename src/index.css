@@ -5,6 +5,7 @@
     background-color: rgb(226, 222, 222);
     margin: 0;
     text-align: center;
+    padding: 0 15px;
   }
 
   @media screen and (max-width: 390px) {
@@ -43,7 +44,7 @@
       background: #fff;
       border: 5px inherit;
       float: left;
-      font-size: 70px;
+      font-size: 60px;
       color: rgb(30,205,151);
       font-weight: bold;
       line-height: 7px;
@@ -57,7 +58,7 @@
       background: #fff;
       border: 2px inherit;
       float: left;
-      font-size: 70px;
+      font-size: 60px;
       color: rgb(30,205,151);
       font-weight: bold;
       line-height: 2px;
@@ -71,7 +72,7 @@
       background: #fff;
       border: 2px inherit;
       float: left;
-      font-size: 60px;
+      font-size: 50px;
       color: rgb(30,205,151);
       font-weight: bold;
       line-height: 2px;
@@ -85,7 +86,7 @@
       background: #fff;
       border: 2px inherit;
       float: left;
-      font-size: 55px;
+      font-size: 45px;
       color: rgb(30,205,151);
       font-weight: bold;
       line-height: 2px;
@@ -99,7 +100,7 @@
       background: #fff;
       border: 2px inherit;
       float: left;
-      font-size: 45px;
+      font-size: 35px;
       color: rgb(30,205,151);
       font-weight: bold;
       line-height: 2px;
@@ -162,6 +163,8 @@
   .button:hover {
     color: rgba(255,255,255,1);
     background: rgb(30, 205, 151);
-
+    -webkit-transform: scale(1.18);
+    -ms-transform: scale(1.18);
+    transform: scale(1.18);
   }
   
