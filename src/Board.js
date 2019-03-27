@@ -17,7 +17,6 @@ class Board extends Component {
       if (calculateWinner(squares) || squares[i]) {
         return;
       }
-      //if there is a winner or square is filled, handleClick ends
       squares[i] = this.state.xIsNext ? 'X' : 'O';
       this.setState({
           squares: squares,
@@ -31,8 +30,8 @@ class Board extends Component {
         return <Square 
           value={this.state.squares[i]}
           onClick={() => this.handleClick(i)} />;
-        //when button is click, calls onClick event handlers from Square 
-        //when called, it runs this.handleClick(i) on Board
+        // runs handleClick function from above ^^
+        // renderSquare renders Square.js - if button is clicked, calls onClick event 
     }
 
     restartGame(event) {
@@ -40,6 +39,8 @@ class Board extends Component {
         squares: Array(9).fill(null),
         xIsNext: true,
         turn: 1});
+        // function makes sure any setState is working
+        // restartGame function on button under tic tac toe game
     }
     
     render() {
@@ -50,9 +51,11 @@ class Board extends Component {
         status = 'Winner: ' + winner;
       } else if (this.state.turn === 10 && !winner) {
         status = "Draw, start again?"
+      // if it's turn 10 (last turn) and there isn't a winner 
       }
         else {
         status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+      // if no winner, alternates between X & O
       }
       
       return (
@@ -102,5 +105,5 @@ class Board extends Component {
     //runs loop, identifies if lines[i] matches any possible way of winning
     }
     return null;
-  //if no match, returns null
+    //if no match, returns null
   }
